@@ -1,0 +1,13 @@
+--- config.def.h
++++ config.def.h
+@@ -70,6 +70,10 @@ static Key keys[] = {
+ 	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
+ 	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
++	{MODKEY,						XK_o, 	   hidewin, 	   {0}},
++   {MODKEY|ShiftMask, 			    XK_o, 	   restorewin, 	   {0}},
++   {MODKEY, 						XK_w, 	   hideotherwins,  {0}},
++   {MODKEY|ShiftMask, 				XK_w, 	   restoreotherwins, {0}},
+ 	{ MODKEY,                       XK_Return, zoom,           {0} },
+ 	{ MODKEY,                       XK_Tab,    view,           {0} },
+ 	{ MODKEY|ShiftMask,             XK_q,      killclient,     {0} },
+ 
